@@ -138,7 +138,7 @@
   <img src="<?= base_url('assets/logo1.png'); ?>" alt="Logo Kanan" class="corner-logo logo-right">
 
   <div class="login-container">
-    <img src="<?= base_url('assets/maskot.png'); ?>" alt="Maskot" class="maskot-img">
+    <img src="<?= base_url('assets/maskot3.png'); ?>" alt="Maskot" class="maskot-img">
     <div class="system-title">SIKEBAYA</div>
     <div class="sub-title">Sistem Informasi Kepegawaian Bhayangkara</div>
 
@@ -169,4 +169,3 @@
 
 </body>
 </html>
-A
