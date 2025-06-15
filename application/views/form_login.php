@@ -134,11 +134,11 @@
 <body>
 
   <!-- Logo kiri & kanan -->
-  <img src="<?= base_url('assets/logo2.png'); ?>" alt="Logo Kiri" class="corner-logo logo-left">
+  <img src="<?= base_url('assets/polda.png'); ?>" alt="Logo Kiri" class="corner-logo logo-left">
   <img src="<?= base_url('assets/logo1.png'); ?>" alt="Logo Kanan" class="corner-logo logo-right">
 
   <div class="login-container">
-    <img src="<?= base_url('assets/maskot3.png'); ?>" alt="Maskot" class="maskot-img">
+    <img src="<?= base_url('assets/Maskot.png'); ?>" alt="Maskot" class="maskot-img">
     <div class="system-title">SIKEBAYA</div>
     <div class="sub-title">Sistem Informasi Kepegawaian Bhayangkara</div>
 
