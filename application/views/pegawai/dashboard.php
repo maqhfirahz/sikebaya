@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <h4 class="mb-4"><?= $title ?></h4>
+    <!-- <h4 class="mb-4"><?= $title ?></h4> -->
     <?= $this->session->flashdata('message') ?>
 
     <!-- Card Data Pegawai dan Absensi -->

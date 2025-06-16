@@ -4,7 +4,8 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color:rgb(1, 47, 94);">
+        <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar"
+            style="background: linear-gradient(180deg, #0D1A26, #3ABAFB);">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url('admin/dashboard') ?>">
@@ -21,14 +22,15 @@
             <li class="nav-item">
                 <a class="nav-link text-white" href="<?php echo base_url('admin/dashboard') ?>">
                     <i class="fas fa-fw fa-tachometer-alt text-white"></i>
-                    <span>Dashboard</span></a>
+                    <span>Dashboard</span>
+                </a>
             </li>
 
             <!-- Master Data -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                <a class="nav-link collapsed text-white" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-database"></i>
+                    <i class="fas fa-fw fa-database text-white"></i>
                     <span>Master Data</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -41,9 +43,9 @@
 
             <!-- Manajemen -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                <a class="nav-link collapsed text-white" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-money-check"></i>
+                    <i class="fas fa-fw fa-money-check text-white"></i>
                     <span>Manajemen</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
@@ -58,9 +60,9 @@
 
             <!-- Laporan -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                <a class="nav-link collapsed text-white" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-receipt"></i>
+                    <i class="fas fa-fw fa-receipt text-white"></i>
                     <span>Laporan</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
@@ -74,16 +76,18 @@
 
             <!-- Ubah Password -->
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('gantiPassword')?>">
-                    <i class="fas fa-fw fa-lock"></i>
-                    <span>Ubah Password</span></a>
+                <a class="nav-link text-white" href="<?php echo base_url('gantiPassword') ?>">
+                    <i class="fas fa-fw fa-lock text-white"></i>
+                    <span>Ubah Password</span>
+                </a>
             </li>
 
             <!-- Logout -->
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('welcome/logout')?>">
-                    <i class="fas fa-fw fa-sign-out-alt"></i>
-                    <span>Logout</span></a>
+                <a class="nav-link text-white" href="<?php echo base_url('welcome/logout') ?>">
+                    <i class="fas fa-fw fa-sign-out-alt text-white"></i>
+                    <span>Logout</span>
+                </a>
             </li>
 
             <!-- Sidebar Toggler -->
@@ -119,10 +123,10 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-white small">
-                                    Selamat Datang <?php echo $this->session->userdata('nama_pegawai')?>
+                                    Selamat Datang <?php echo $this->session->userdata('nama_pegawai') ?>
                                 </span>
                                 <img class="img-profile rounded-circle"
-                                     src="<?php echo base_url('assets/img/').$this->session->userdata('photo')?>">
+                                     src="<?php echo base_url('assets/img/') . $this->session->userdata('photo') ?>">
                             </a>
                         </li>
                     </ul>

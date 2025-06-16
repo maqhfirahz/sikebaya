@@ -1,18 +1,19 @@
-
 <body id="page-top">
 
     <!-- Page Wrapper -->
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color:rgb(1, 47, 94);">
+        <ul class="navbar-nav sidebar sidebar-dark accordion"
+            style="background: linear-gradient(to bottom, #0D1A26, #3ABAFB);" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url('admin/dashboard') ?>">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center"
+                href="<?php echo base_url('pegawai/dashboard') ?>">
                 <div class="sidebar-brand-icon">
                     <img src="<?php echo base_url('assets/biddokes.png') ?>" alt="Logo RS" style="height: 40px;">
                 </div>
-                <div class="sidebar-brand-text mx-3 text-white">SIKEBAYA</div>
+                <div class="sidebar-brand-text mx-3">SIKEBAYA</div>
             </a>
 
             <!-- Divider -->
@@ -20,45 +21,44 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link text-white" href="<?php echo base_url('pegawai/dashboard') ?>">
-                    <i class="fas fa-fw fa-tachometer-alt text-white"></i>
-                    <span>Dashboard</span></a>
+                <a class="nav-link" href="<?php echo base_url('pegawai/dashboard') ?>">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
             </li>
 
-            </li>
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url('pegawai/cuti/histori') ?>">
-                    <i class="fas fa-fw fa-calendar"></i>
-                    <span>Cuti</span></a>
-            </li>
-        
-
-            <li class="nav-item">
-                <a class="nav-link text-white" href="<?php echo base_url('pegawai/gaji') ?>">
-                    <i class="fas fa-fw fa-money-bill-wave"></i>
-                    <span>Data Gaji</span></a>
-            </li>
-        
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('gantiPassword')?>">
-                <i class="fas fa-fw fa-lock"></i>
-                    <span>Ubah Password</span></a>
+                    <i class="fas fa-fw fa-calendar-check"></i>
+                    <span>Cuti</span>
+                </a>
             </li>
 
-            <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('welcome/logout')?>">
-                <i class="fas fa-fw fa-sign-out-alt"></i>
-                    <span>Logout</span></a>
+                <a class="nav-link" href="<?php echo base_url('pegawai/gaji') ?>">
+                    <i class="fas fa-fw fa-money-bill"></i>
+                    <span>Data Gaji</span>
+                </a>
             </li>
 
-            <!-- Sidebar Toggler (Sidebar) -->
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url('gantiPassword') ?>">
+                    <i class="fas fa-fw fa-lock"></i>
+                    <span>Ubah Password</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url('welcome/logout') ?>">
+                    <i class="fas fa-fw fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+
+            <!-- Sidebar Toggler -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
-
-            <!-- Sidebar Message -->
 
         </ul>
         <!-- End of Sidebar -->
@@ -70,31 +70,29 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow" style="background-color: #0d1a26;">
+                <nav class="navbar navbar-expand navbar-dark topbar mb-4 static-top shadow"
+                     style="background-color: #0D1A26;">
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars text-white"></i>
+                        <i class="fa fa-bars"></i>
                     </button>
 
-              
-                    <p class="mb-0 font-weight-bold text-white">RS BHAYANGKARA</p>
+                    <p class="text-white font-weight-bold mt-3">DASHBOARD PEGAWAI</p>
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
-
-                  
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-white small">
-                                    Selamat Datang <?php echo $this->session->userdata('nama_pegawai')?>
+                                    Selamat Datang <?php echo $this->session->userdata('nama_pegawai') ?>
                                 </span>
                                 <img class="img-profile rounded-circle"
-                                    src="<?php echo base_url('assets/img/').$this->session->userdata('photo')?>">
+                                     src="<?php echo base_url('assets/img/') . $this->session->userdata('photo') ?>">
                             </a>
                         </li>
 
